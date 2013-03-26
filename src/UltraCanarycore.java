@@ -16,8 +16,9 @@ public class UltraCanarycore extends Plugin{
 	}
 	
 	public void initialize() {
-		etc.getLoader().addListener(PluginLoader.Hook.FOODLEVEL_CHANGE, this.listener, this, PluginListener.Priority.MEDIUM);
+		etc.getLoader().addListener(PluginLoader.Hook.HEALTH_CHANGE, this.listener, this, PluginListener.Priority.MEDIUM);
 		etc.getLoader().addListener(PluginLoader.Hook.COMMAND, this.listener, this, PluginListener.Priority.MEDIUM);
+		etc.getLoader().addListener(PluginLoader.Hook.EAT, this.listener, this, PluginListener.Priority.MEDIUM);
 	}
 
 }
