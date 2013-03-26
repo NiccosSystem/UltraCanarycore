@@ -2,16 +2,9 @@
 public class UltraCanarycoreListener extends PluginListener{
 
 	public int onFoodLevelChange(Player player, int oldFoodLevel, int newFoodLevel) {
-		
-		if (newFoodLevel >= 18) return 17;
-			
-		return newFoodLevel;	
-		
+		return newFoodLevel >= 18 ? 17 : newFoodLevel;		
 	}
-	public boolean onCommand(Player p, String[] cmd) {
-		
-		
-		
+	public boolean onCommand(Player p, String[] cmd) {		
 		return false;		
 	}
 }
