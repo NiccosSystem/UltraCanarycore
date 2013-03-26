@@ -1,0 +1,22 @@
+
+public class UltraCanarycore extends Plugin{
+	
+	private UltraCanarycoreListener listener = new UltraCanarycoreListener();
+	
+	@Override
+	public void disable() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void enable() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void initialize() {
+		etc.getLoader().addListener(PluginLoader.Hook.FOODLEVEL_CHANGE, this.listener, this, PluginListener.Priority.MEDIUM);
+	}
+
+}
