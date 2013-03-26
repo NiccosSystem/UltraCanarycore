@@ -8,4 +8,10 @@ public class UltraCanarycoreListener extends PluginListener{
 		return newFoodLevel;	
 		
 	}
+	public boolean onCommand(Player p, String[] cmd) {
+		
+		
+		
+		return false;		
+	}
 }
